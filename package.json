@@ -1,0 +1,20 @@
+{
+  "name": "de.jacklog.shootertemplate",
+  "version": "0.0.1",
+  "displayName": "ShooterTemplate",
+  "description": "3rd Person Shooter Template",
+  "unity": "2023.2",
+  "unityRelease": "3f1",
+  "dependencies": {
+  },
+  "keywords": [
+    "shooter",
+    "3rd person",
+    "jacklog"
+  ],
+  "author": {
+    "name": "Jack",
+    "email": "dev@jacklog.de",
+    "url": "https://jacklog.de"
+  }
+}
