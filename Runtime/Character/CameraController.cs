@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using Cinemachine;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCamera _aimCamera;
+    [SerializeField] private CinemachineCamera _aimCamera;
     
     // Start is called before the first frame update
     void Start()
@@ -24,4 +24,5 @@ public class CameraController : MonoBehaviour
         Debug.Log($"toggle aim {value}");
         _aimCamera.gameObject.SetActive(value);
     }
+    
 }
