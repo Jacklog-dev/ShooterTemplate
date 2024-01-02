@@ -6,6 +6,8 @@
   "unity": "2023.2",
   "unityRelease": "3f1",
   "dependencies": {
+    "com.unity.cinemachine": "",
+    "com.unity.inputsystem": "1.7.0"
   },
   "keywords": [
     "shooter",
