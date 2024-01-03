@@ -10,10 +10,14 @@ namespace Weapon
         [SerializeField] protected Transform _muzzle;
         [SerializeField] protected Transform _aimPoint;
         [SerializeField] private ModelController _modelController;
+        
         [SerializeField] protected float _fireRate;
+        [SerializeField] protected float _damage;
         
         protected float _cooldown;
+        protected Transform _currentTarget;
         private bool _aim;
+        protected Vector3 _currentHitPoint;
 
         private void Update()
         {
@@ -30,7 +34,10 @@ namespace Weapon
             var ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width/2f, Screen.height/2f));
             if (Physics.Raycast(ray, out var hit, 999f, _aimColliderMask))
             {
+                _currentTarget = hit.transform;
+                _currentHitPoint = hit.point;
                 _aimPoint.position = hit.point;
+                
                 var aimTarget = hit.point;
                 if (_aim)
                 {
