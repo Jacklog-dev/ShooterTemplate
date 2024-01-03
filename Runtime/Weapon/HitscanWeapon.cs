@@ -13,11 +13,11 @@ namespace Weapon
             if (_cooldown > 0f) return;
             _cooldown = _fireRate;
 
+            HitscanHitEvent?.Invoke(_currentHitPoint);
             var target = _currentTarget.GetComponent<ShooterTargetBase>();
             if (target != null)
             {
                 target.InflictDamage(_damage);
-                HitscanHitEvent?.Invoke(_currentHitPoint);
             }    
         }
     }
