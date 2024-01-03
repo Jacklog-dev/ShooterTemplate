@@ -10,6 +10,7 @@ namespace Weapon
     {
         [SerializeField] private ProjectileBase _projectilePrefab;
         [SerializeField] private float _projectileSpeed;
+        [SerializeField] private float _damage;
 
 
         public override void Shoot()
@@ -19,7 +20,7 @@ namespace Weapon
             
             var dir = (_aimPoint.position - _muzzle.position).normalized;
             var projectile = Instantiate(_projectilePrefab, _muzzle.position, Quaternion.LookRotation(dir, Vector3.up));
-            projectile.Init(_projectileSpeed);
+            projectile.Init(_projectileSpeed, _damage);
         }
     }
 }

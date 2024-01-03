@@ -22,7 +22,6 @@ public class InputController : MonoBehaviour
 
     public void OnShoot(InputValue value)
     {
-        Debug.Log("Shoot");
         OnShootTriggerd?.Invoke();
     }
 }
