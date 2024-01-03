@@ -1,0 +1,16 @@
+{
+    "name": "Jacklog.ShooterTemplate.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:55780680b90504017a66ef951d83c6e3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
