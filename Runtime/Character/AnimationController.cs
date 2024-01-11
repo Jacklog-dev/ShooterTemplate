@@ -5,7 +5,7 @@ namespace Character
 {
     public class AnimationController : MonoBehaviour
     {
-        [SerializeField] private Animator _animator;
+        [SerializeField] protected Animator _animator;
         [SerializeField] private float _aimSpeed;
         private int _targetWeight;
 

@@ -5,13 +5,12 @@ namespace Target
 {
     public class ShooterTargetBase : MonoBehaviour
     {
-        [SerializeField] private UnityEvent OnDamageReceived;
+        [SerializeField] public UnityEvent<float, Vector3> OnDamageReceived;
 
 
-        public void InflictDamage(float damage)
+        public void InflictDamage(float damage, Vector3 point)
         {
-            Debug.Log("inflict damage");
-            OnDamageReceived?.Invoke();
+            OnDamageReceived?.Invoke(damage, point);
         }
     }
 }

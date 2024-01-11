@@ -26,7 +26,7 @@ namespace Projectiles
             var target = other.GetComponent<ShooterTargetBase>();
             if (target != null)
             {
-                target.InflictDamage(_damage);
+                target.InflictDamage(_damage, other.ClosestPoint(transform.position));
             }
             Destroy(gameObject);
         }

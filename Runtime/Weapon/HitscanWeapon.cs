@@ -17,7 +17,7 @@ namespace Weapon
             var target = _currentTarget.GetComponent<ShooterTargetBase>();
             if (target != null)
             {
-                target.InflictDamage(_damage);
+                target.InflictDamage(_damage, _currentHitPoint);
             }    
         }
     }
